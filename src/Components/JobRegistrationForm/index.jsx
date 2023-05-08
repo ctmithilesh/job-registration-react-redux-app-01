@@ -103,6 +103,7 @@ export default function JobRegistrationForm() {
                Gender
             </label>
             <select name="gender" onChangeCapture={handleInputChange}  {...register('gender',{required:true})}>
+                <option value="">Please choose an option</option>
                 <option value="Male">Male </option>
                 <option value="Female">Female</option>
             </select>
@@ -113,7 +114,7 @@ export default function JobRegistrationForm() {
                 Your Graduation Details 
             </label>
             <select name="graduation" onChangeCapture={handleInputChange} {...register('graduation',{required:true})}>
-                <option>Select Value</option>
+                <option value="">Please choose an option</option>
                 <option value="BCOM">BCOM</option>
                 <option value="BSCIT">BSCIT</option>
                 <option value="BTECH">BTECH</option>
@@ -126,7 +127,7 @@ export default function JobRegistrationForm() {
                 Your Masters Details 
             </label>
             <select name="masters" onChangeCapture={handleInputChange} {...register('masters',{required:true})}>
-                <option>Select Value</option>
+            <option value="">Please choose an option</option>
                 <option value="MCOM">MCOM</option>
                 <option value="MSCIT">MSCIT</option>
                 <option value="MTECH">MTECH</option>
@@ -139,7 +140,7 @@ export default function JobRegistrationForm() {
                 Your Primary Skills 
             </label>
             <select name="primary_skills" onChangeCapture={handleInputChange}  {...register('primary_skills',{required:true})}>
-                <option>Select Value</option>
+            <option value="">Please choose an option</option>
                 <option value="Coding">Coding</option>
                 <option value="Communication">Communication</option>
                 <option value="DevOps">DevOps</option>
@@ -153,7 +154,7 @@ export default function JobRegistrationForm() {
                 Your Secondary Skills 
             </label>
             <select name="secondary_skills" onChangeCapture={handleInputChange} {...register('secondary_skills',{required:true})}>
-                <option>Select Value</option>
+                <option value="">Please choose an option</option>
                 <option value="Sales">Sales</option>
                 <option value="Digital Marketing">Digital Marketing</option>
                 <option value="Public Speaking Skills">Public Speaking Skills</option>
